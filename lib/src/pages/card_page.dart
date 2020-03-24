@@ -25,7 +25,22 @@ Widget _cardTipo1() {
       children: <Widget>[
         ListTile(
           leading: Icon(Icons.photo_album, color: Colors.blue,),
-        )
+          title: Text('Soy el título de esta tarjeta'),
+          subtitle: Text('Aquí estamos con la descripción de la tarjeta que quiero que ustedes vean para tener una idea de lo que quiero mostrarles'),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            FlatButton(
+              child: Text('Cancelar'),
+              onPressed: () {},
+            ),
+            FlatButton(
+              child: Text('Ok'),
+              onPressed: () {},
+            )
+          ],
+        ),
       ],
     ),
   );
